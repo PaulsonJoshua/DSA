@@ -19,13 +19,13 @@ class Solution {
         helper(root, op);
         return op;
     }
-   public void helper(TreeNode root, List<Integer> op) {
-        if (root == null) {
-            return;
-        }
-
-        op.add(root.val);          
-        helper(root.left, op);     
-        helper(root.right, op);    
+   
+    public void helper(TreeNode root,List<Integer> op)
+    {
+        if(root==null)
+        return ;
+        op.add(root.val);
+        helper(root.left,op);
+        helper(root.right,op);
     }
 }
