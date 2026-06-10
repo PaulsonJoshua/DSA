@@ -5,7 +5,6 @@ class Solution {
             int digit = x % 10;
             x /= 10;
 
-            // Check for overflow before multiplying
             if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && digit > 7)) return 0;
             if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && digit < -8)) return 0;
 
